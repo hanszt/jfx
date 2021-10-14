@@ -95,6 +95,7 @@ import javafx.scene.input.SwipeEvent;
 import javafx.scene.input.TouchEvent;
 import javafx.scene.input.TransferMode;
 import javafx.scene.input.ZoomEvent;
+import javafx.scene.input.target.Interactable;
 import javafx.scene.text.Font;
 import javafx.scene.transform.Rotate;
 import javafx.scene.transform.Transform;
@@ -405,7 +406,7 @@ import com.sun.javafx.logging.PlatformLogger.Level;
  * @since JavaFX 2.0
  */
 @IDProperty("id")
-public abstract class Node implements EventTarget, Styleable {
+public abstract class Node implements EventTarget, Interactable, Styleable {
 
     /*
      * Store the singleton instance of the NodeHelper subclass corresponding
