@@ -73,6 +73,7 @@ import javafx.event.*;
 import javafx.geometry.*;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.*;
+import javafx.scene.input.target.Interactable;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.stage.PopupWindow;
@@ -171,7 +172,7 @@ root.getChildren().add(r);
  * @since JavaFX 2.0
  */
 @DefaultProperty("root")
-public class Scene implements EventTarget {
+public class Scene implements EventTarget, Interactable {
 
     private double widthSetByUser = -1.0;
     private double heightSetByUser = -1.0;
